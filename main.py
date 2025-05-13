@@ -17,8 +17,8 @@ logging.basicConfig(
 
 def detect_obstacle(x_range: list[int], y_range: list[int]) -> bool:
     """
-    Detects when an obstacle is approaching by comparing the pixel colour in front of the dinosaur against
-    the surrounding background colour.
+    Detects when an obstacle is approaching by comparing the pixel colours in a region front of the dinosaur 
+    against the surrounding background colour.
     """
     # take screenshot
     image = screenshot()
